@@ -1,0 +1,273 @@
+:root{
+    --alternative-color-text:#FF6C00;
+    --color-text-white:#ffffff;
+    --main-border-btn:#FF6C00;
+
+}
+
+
+body{
+    font-family: 'open sans',sans-serif;
+}
+
+.list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img{
+    display: block;
+}
+
+.after-title{
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+}
+
+.title{
+    font-size: 42px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+}
+
+.pre-title{
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+}
+
+.btn{
+    padding: 12px 20px;
+    background-color: transparent;
+
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.34;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    
+    border: 1px solid var(--main-border-btn);
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/*--------------- HEADER -------------------------*/
+
+.header {
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+.header-nav {
+    display: inline-flex;
+    align-items: center;
+}
+.header-logo {
+}
+.header-list {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+.header-item {
+}
+
+.header-item:not(:last-child){
+    margin-right: 30px;
+}
+
+.header-link,
+.header-tel  {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
+
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.34;
+    letter-spacing: 0.1em;
+
+    color: var(--color-text-white);
+}
+
+.header-link:hover{
+    color:var(--alternative-color-text);
+}
+
+.header-contact{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 17px;
+}
+
+.header-tel {
+}
+.header-btn {
+    margin-left: 43px;
+    color: var(--color-text-white);
+}
+
+/*--------------- HERO -------------------------*/
+
+.hero {
+    background-color: aqua;
+}
+.hero-list {
+}
+.hero-item {
+}
+.hero-link {
+    text-decoration: none;
+}
+.hero-pre-title {
+    color: rgba(157, 164, 189, 0.6);
+}
+
+.hero-title {
+    color: #FFFFFF;
+}
+
+.hero-after-title {
+    color: #9DA4BD;
+}
+
+/*--------------- ABOUT -------------------------*/
+
+.about {
+    background-color: tomato;
+}
+.about-list {
+}
+.list {
+}
+.about-item {
+}
+.about-pre-title {
+    color: #303030;
+}
+    
+
+.about-title {
+    color: #303030;
+}
+
+.about-after-title {
+    color: #555555;
+}
+
+.about-text {
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+    color: #555555;
+}
+.about-btn {
+    color: #303030;
+}
+
+/*--------------- PRICES -------------------------*/
+
+
+.prices {
+    background-color: greenyellow;
+}
+.prices-pre-title {
+    color: rgba(157, 164, 189, 0.6);
+}
+
+.prices-title {
+    color: #FFFFFF;
+}
+
+.prices-list {
+}
+
+.prices-item {
+}
+.prices-item-text {
+}
+.prices-btn {
+    color: #FFFFFF;
+}
+
+/*--------------- BENEFITS -------------------------*/
+
+.benefits {
+    background-color: gold;
+}
+.benefits-list {
+}
+
+.benefits-item {
+}
+
+.benefits-item span{
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: #303030;
+}
+
+.benefits-item-text {
+    color: #303030;
+}
+.benefits-pre-title {
+    color: #303030;
+}
+
+.benefits-title {
+    color: #303030;
+}
+
+.benefits-after-title {
+    color: #555555;
+
+}
+
+/*--------------- BARBER -------------------------*/
+
+.barber {
+}
+.barber-pre-title {
+    color: #303030;
+}
+
+.barber-title {
+    color: #303030;
+}
+
+.barber-list {
+    display: flex;
+}
+
+.barber-item {
+}
+
+.barber-item:not(:last-child){
+    margin-right: 30px;
+}
+.barber-item-title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.39;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #303030;
+}
+.barber-item-text {
+    font-size: 14px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--alternative-color-text);
+}
+
