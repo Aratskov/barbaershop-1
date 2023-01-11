@@ -228,8 +228,12 @@ img{
 
 
 .prices {
-    background-color: greenyellow;
+    /* background-color: #111319; */
+    background-image: url(./images/prices-bg.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
 .prices-pre-title {
     color: rgba(157, 164, 189, 0.6);
 }
@@ -239,12 +243,20 @@ img{
     color: #FFFFFF;
 }
 
+.prices-list-wrap{
+    display: flex;
+}
+
 .prices-list {
     padding: 30px 20px;
 
     width: 540px;
     background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
     outline: 1px dashed black;
+}
+
+.prices-list:not(:last-child){
+    margin-right: 30px;
 }
 
 .prices-item {
