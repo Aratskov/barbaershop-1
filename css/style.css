@@ -94,23 +94,21 @@ img{
 /*--------------- HEADER -------------------------*/
 
 .header {
-    max-width: 1600px;
+    width: 1600px;
     margin: 0 auto;
+    position: absolute;
+    width: 100%;
 }
 
 .header .container{
     display: flex;
     align-items: center;
-    position: absolute;
-    transform: translateX(80px);
 }
 
 .header-nav {
     display:flex;
     align-items: center;
     margin-right: auto;
-    /* padding-top: 32px;
-    padding-bottom: 32px; */
 }
 .header-logo {
 }
@@ -140,19 +138,17 @@ img{
     letter-spacing: 0.1em;
 
     color: var(--color-text-white);
+
+    transition: color 250ms linear;
 }
 
 .header-link:hover,
-.header-link:focus{
+.header-link:focus,
+.header-tel:hover,
+.header-tel:focus{
     color:var(--alternative-color-text);
 }
 
-/* .header-contact{
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    margin-right: 17px;
-} */
 
 .header-tel {
 }
@@ -172,18 +168,26 @@ img{
 .hero-container{
     display: flex;
 }
-.hero-list {
+
+.cont-hero-list{
+    box-sizing: border-box;
     width: 100px;
-    margin-top: 370px;
+    display: flex;
+    align-items: flex-end;
+
+    padding-bottom: 40px;
+    padding-left: 27px;
 
 }
-.hero-item {
-
+.hero-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transform: rotate(-90deg) translateY(100%); 
+    transform-origin: left bottom;
 }
+
 .hero-link {
-    display: block;
-    margin-top: calc(72px + 40px);
-
     text-decoration: none;
     font-weight: 600;
     font-size: 11px;
@@ -191,7 +195,15 @@ img{
     letter-spacing: 0.2em;
     color: #303030;
 
-    transform: rotate(-90deg);
+    transition: color 250ms linear;
+
+}
+
+.hero-list::before{
+    content: "";
+    width: 60px;
+    height: 1px;
+    background-color: #303030;
 }
 
 .hero-link:hover,
@@ -409,6 +421,8 @@ img{
 }
 
 .benefits-item span{
+    position: relative;
+
     font-weight: 700;
     font-size: 42px;
     line-height: 1.36;
@@ -418,6 +432,19 @@ img{
     color: #303030;
 }
 
+.benefits-item span::after{
+    content: "+";
+   
+    position: absolute;
+    bottom:27px;
+    margin-left: 1px;
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.37;
+    color: var(--alternative-color-text);
+
+}
 .benefits-item-text {
     font-weight: 600;
     font-size: 11px;
