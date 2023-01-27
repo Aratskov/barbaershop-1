@@ -1,0 +1,33 @@
+.title{
+    font-size: 42px;
+    line-height: calc(49/42);
+    letter-spacing: 0.05em;
+}
+
+.pre-title{
+    font-weight: 600;
+    font-size: 11px;
+    line-height: calc(15/11);
+    text-transform: uppercase;
+    color: #303030;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    &::before{
+        content: "";
+        width: 60px;
+        height: 4px;
+        background-color:currentColor;
+    }
+}
+
+
+
+.after-title{
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: #555555;
+}

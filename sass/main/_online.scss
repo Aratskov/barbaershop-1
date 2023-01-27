@@ -1,0 +1,135 @@
+.contact-wrap {
+    background-color: #191C26;
+}
+
+.online {
+    padding-top: 84px;
+    padding-bottom: 84px;
+}
+
+
+.online-title {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+
+    @include mobile {
+        font-size: 42px;
+    }
+
+    @include tablet {
+        text-align: start;
+    }
+
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+}
+
+.form__wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 418px;
+    width: 100%;
+
+    &:first-child {
+        margin-top: 44px;
+    }
+
+    // &:not(:last-child){
+    // flex-direction: row;
+    // }
+}
+
+.form__label {
+    position: absolute;
+    bottom: 8px;
+    left: 10px;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: calc(15/11);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(157, 164, 189, 0.4);
+}
+
+
+
+
+
+.form__input {
+    height: 24px;
+    color: #FFFFFF;
+    background-color: transparent;
+    padding: 0;
+    padding-left: 10px;
+    border: none;
+    outline: transparent;
+    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+
+    &:focus {
+        border-color: #FFFFFF;
+    }
+
+    &:focus+.form__label,
+    &:not(:placeholder-shown)+.form__label {
+        color: #FFFFFF;
+        transform: translateY(-100%);
+    }
+}
+
+.form__text {
+    position: absolute;
+    left: 10px;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: calc(15/11);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(157, 164, 189, 0.4);
+
+    .form__textarea:focus+&,
+    .form__textarea:not(:placeholder-shown)+& {
+        color: #FFFFFF;
+        transform: translateY(-100%);
+    }
+}
+
+.form__textarea {
+    height: 76px;
+    padding: 0;
+    padding-left: 10px;
+    resize: none;
+
+    color: #FFFFFF;
+    background-color: transparent;
+    outline: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+
+    &:focus {
+        border-color: #FFFFFF;
+    }
+}
+
+.form__button {
+    margin: 0 auto;
+    margin-top: 56px;
+    min-width: 160px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    text-align: center;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}

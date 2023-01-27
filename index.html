@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Barbershop</title>
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.min.css">
   </head>
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="container">
         <nav class="header-nav">
           <a href="" class="header-logo">
@@ -29,7 +29,7 @@
           <button type="button" class="header-btn btn">Online-booking</button>
         
       </div>
-    </header>
+    </header> -->
 
   
 
@@ -61,14 +61,27 @@
         </div>
       </section>
 
-      <section class="about section">
-        <div class="container">
+      <section class="section">
+        <div class="container about-container">
           <ul class="about-list list">
             <li class="about-item">
-              <img src="./images/haircut-process-1.jpg" alt="example haircut" />
+              <picture>
+                <source srcset="./images/haircut-process-1-des.jpg 1x,./images/haircut-process-1-des-2x.jpg 2x"
+                media="(min-width:1200px)">
+                <source srcset="./images/haircut-process-1-tab.jpg 1x,./images/haircut-process-1-tab-2x.jpg 2x"
+                media="(min-width:710px)">
+                <img src="./images/haircut-process-1-des.jpg" alt="example haircut" />
+              </picture>
+              
             </li>
             <li class="about-item">
-              <img src="./images/haircut-process-2.jpg" alt="example haircut" />
+              <picture>
+                <source srcset="./images/haircut-process-2-des.jpg 1x,./images/haircut-process-2-des-2x.jpg 2x"
+                media="(min-width:1200px)">
+                <source srcset="./images/haircut-process-2-tab.jpg 1x,./images/haircut-process-2-tab-2x.jpg 2x"
+                media="(min-width:710px)">
+                <img src="./images/haircut-process-2-des.jpg" alt="example haircut" />
+              </picture>
             </li>
           </ul>
           <div class="about-wrap">
@@ -177,35 +190,49 @@
         <h2 class="barber-title title">Our barbers</h2>
         <ul class="barber-list list">
           <li class="barber-item">
-            <img src="./images/barber-1.jpg" alt="barber John" width="370"/>
+            <picture>
+              <source 
+              srcset="./images/barber-1-des.jpg 1x,./images/barber-1-des-2x.jpg 2x"
+              media="(min-width:1200px)"
+              >
+              <source 
+              srcset="./images/barber-1-tab.jpg 1x,./images/barber-1-tab-2x.jpg 2x"
+              media="(min-width:720px)"
+              >
+              <source 
+              srcset="./images/barber-1-mob.jpg 1x,./images/barber-1-mob-2x.jpg 2x"
+              media="(max-width:719px)"
+              >
+              <img src="./images/barber-1-tab.jpg" alt="barber John" width="450"/>
+            </picture>
             <h3 class="barber-item-title">John Smith</h3>
             <p class="barber-item-text">Extreme Barber</p>
             
             <ul class="social-list list">
               <li class="social-item">
                 <a href="" class="social-item-link">
-                  <svg class="social-icon">
+                  <svg class="social-icon" aria-label="instagram">
                     <use href="./images/sprite.svg#instagram"></use>
                   </svg>
                 </a>
               </li>
               <li class="social-item">
                 <a href="" class="social-item-link">
-                  <svg class="social-icon">
+                  <svg class="social-icon" aria-label="twitter">
                     <use href="./images/sprite.svg#twitter"></use>
                   </svg>
                 </a>
               </li>
               <li class="social-item">
                 <a href="" class="social-item-link">
-                  <svg class="social-icon">
+                  <svg class="social-icon" aria-label="facebook">
                     <use href="./images/sprite.svg#facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="social-item">
                 <a href="" class="social-item-link">
-                  <svg class="social-icon">
+                  <svg class="social-icon" aria-label="linkedin">
                     <use href="./images/sprite.svg#linkedin"></use>
                   </svg>
                 </a>
@@ -214,69 +241,98 @@
           </li>
 
           <li class="barber-item">
-            <img src="./images/barber-2.jpg" alt="barber Michele" width="370"/>
+           <picture>
+              <source 
+              srcset="./images/barber-1-des.jpg 1x,./images/barber-1-des-2x.jpg 2x"
+              media="(min-width:1200px)"
+              >
+              <source 
+              srcset="./images/barber-1-tab.jpg 1x,./images/barber-1-tab-2x.jpg 2x"
+              media="(min-width:720px)"
+              >
+              <source 
+              srcset="./images/barber-1-mob.jpg 1x,./images/barber-1-mob-2x.jpg 2x"
+              media="(max-width:719px)"
+              >
+              <img src="./images/barber-1-tab.jpg" alt="barber John" width="450"/>
+            </picture>
             <h3 class="barber-item-title">Michele Doe</h3>
             <p class="barber-item-text">Extreme Barber</p>
-            <ul class="social-list list">
+        <ul class="social-list list">
               <li class="social-item">
                 <a href="" class="social-item-link">
-                  <svg class="social-icon">
+                  <svg class="social-icon" aria-label="instagram">
                     <use href="./images/sprite.svg#instagram"></use>
                   </svg>
                 </a>
               </li>
               <li class="social-item">
                 <a href="" class="social-item-link">
-                  <svg class="social-icon">
+                  <svg class="social-icon" aria-label="twitter">
                     <use href="./images/sprite.svg#twitter"></use>
                   </svg>
                 </a>
               </li>
               <li class="social-item">
                 <a href="" class="social-item-link">
-                  <svg class="social-icon">
+                  <svg class="social-icon" aria-label="facebook">
                     <use href="./images/sprite.svg#facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="social-item">
                 <a href="" class="social-item-link">
-                  <svg class="social-icon">
+                  <svg class="social-icon" aria-label="linkedin">
                     <use href="./images/sprite.svg#linkedin"></use>
                   </svg>
                 </a>
               </li>
             </ul>
           </li>
+
           <li class="barber-item">
-            <img src="./images/barber-3.jpg" alt="barber Alan" width="370" />
+            <picture>
+              <source 
+              srcset="./images/barber-1-des.jpg 1x,./images/barber-1-des-2x.jpg 2x"
+              media="(min-width:1200px)"
+              >
+              <source 
+              srcset="./images/barber-1-tab.jpg 1x,./images/barber-1-tab-2x.jpg 2x"
+              media="(min-width:720px)"
+              >
+              <source 
+              srcset="./images/barber-1-mob.jpg 1x,./images/barber-1-mob-2x.jpg 2x"
+              media="(max-width:719px)"
+              >
+              <img src="./images/barber-1-tab.jpg" alt="barber John" width="450"/>
+            </picture>
             <h3 class="barber-item-title">Alan Black</h3>
             <p class="barber-item-text">Extreme Barber</p>
             <ul class="social-list list">
               <li class="social-item">
                 <a href="" class="social-item-link">
-                  <svg class="social-icon">
+                  <svg class="social-icon" aria-label="instagram">
                     <use href="./images/sprite.svg#instagram"></use>
                   </svg>
                 </a>
               </li>
               <li class="social-item">
                 <a href="" class="social-item-link">
-                  <svg class="social-icon">
+                  <svg class="social-icon" aria-label="twitter">
                     <use href="./images/sprite.svg#twitter"></use>
                   </svg>
                 </a>
               </li>
               <li class="social-item">
                 <a href="" class="social-item-link">
-                  <svg class="social-icon">
+                  <svg class="social-icon" aria-label="facebook">
                     <use href="./images/sprite.svg#facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="social-item">
                 <a href="" class="social-item-link">
-                  <svg class="social-icon">
+                  <svg class="social-icon" aria-label="linkedin">
                     <use href="./images/sprite.svg#linkedin"></use>
                   </svg>
                 </a>
@@ -291,10 +347,10 @@
         <div class="container">
           <p class="our-pre-title pre-title">In Latin, "barba" means "beard"</p>
           <ul class="our-list list">
-            <li class="our-item"><img src="./images/gallery-1.jpg" alt="pictures gallery 1" width="270"></li>
-            <li class="our-item"><img src="./images/gallery-2.jpg" alt="pictures gallery 2" width="270"></li>
-            <li class="our-item"><img src="./images/gallery-3.jpg" alt="pictures gallery 3" width="270"></li>
-            <li class="our-item"><img src="./images/gallery-4.jpg" alt="pictures gallery 4" width="270"></li>
+            <li class="our-item"><img src="./images/gallery-1.jpg" alt="pictures gallery 1" width="418"></li>
+            <li class="our-item"><img src="./images/gallery-2.jpg" alt="pictures gallery 2" width="418"></li>
+            <li class="our-item"><img src="./images/gallery-3.jpg" alt="pictures gallery 3" width="418"></li>
+            <li class="our-item"><img src="./images/gallery-4.jpg" alt="pictures gallery 4" width="418"></li>
           </ul>
           </div>
       </section>
@@ -303,14 +359,33 @@
         <div class="container">
           <section class="online">
             <h2 class="online-title title">Online-booking</h2>
+          <form class="form" autocomplete="off">
+            <div class="form__wrap">
+              <input type="text" name="name" id="name" class="form__input" placeholder=" ">
+              <label for="name" class="form__label">Name*</label>
+            </div>
+
+            <div class="form__wrap">
+              <input type="tel" name="tel" id="tel" class="form__input" placeholder=" ">
+              <label for="tel" class="form__label">Phone*</label>
+            </div>
+
+            <div class="form__wrap">
+              <textarea name="textarea" id="textarea" class="form__textarea" placeholder=" "></textarea>
+              <label for="textarea" class="form__text">Message</label>
+            </div>
+
+          </form>
+          <button type="submit" class="form__button btn">SEND</button>
+          
           </section>
           <section class="contacts">
             <h2 class="contacts-title title">Contacts</h2>
-            <address class="contacts-address">
+            <div class="address-wrap">
+               <address class="contacts-address">
               <ul class="contacts-list list">
                 <li class="contacts-item">
-                  <a href="" class="contacts-item-link">st. Vasilkivska, 7A<br>
-                    Kyiv, 08132</a>
+                  <a href="" class="contacts-item-link">st. Vasilkivska, 7A Kyiv, 08132</a>
                 </li>
 
                 <li class="contacts-item">
@@ -322,14 +397,18 @@
                 </li>
               </ul>
             </address>
-            <p class="contacts-subtext">Working hours</p>
-            <p class="contacts-schedule">Every day from 9:00 to 22:00</p>
+
+            <div class="contackts-time">
+                          <p class="contacts-subtext">Working hours</p>
+            <p class="contacts-schedule contacts-item-link">Every day from 9:00 to 22:00</p>
+            </div>
+            </div>
           </section>
         </div>
       </div>
     </main>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-container">
         <p class="footer-copy">&copy;Copyright 2020</p>
         <ul class="footer-list list">
@@ -337,6 +416,6 @@
           <li class="footer-item"><a href="" class="footer-item-link">Youtube</a></li>
         </ul>
       </div>
-    </footer>
+    </footer> -->
   </body>
 </html>

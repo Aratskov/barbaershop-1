@@ -1,0 +1,52 @@
+.barber{
+background-color: #F7F7F7;
+}
+
+.barber-title{
+    margin-top: 20px;
+    margin-bottom: 44px;
+}
+
+.barber-list{
+display: flex;
+flex-wrap: wrap;
+column-gap: 30px;
+row-gap: 64px;
+justify-content: center;
+
+.barber-item{
+@include mobile{
+    width: 418px;
+}
+
+@include tablet {
+    width: 450px;
+}
+
+@include desktop {
+    width: calc((100% - 60px)/3);
+}
+
+}
+}
+
+.barber-item-title{
+    margin-top: 30px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(25/18);
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.barber-item-text{
+    margin-top: 8px;
+    margin-bottom: 30px;
+
+    font-size: 14px;
+    line-height: calc(19/14);
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FF6C00;
+}

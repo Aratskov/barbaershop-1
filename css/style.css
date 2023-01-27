@@ -183,7 +183,7 @@ img{
     display: flex;
     align-items: center;
     gap: 40px;
-    transform: rotate(-90deg) translateY(100%); 
+    transform: rotate(-90deg) ; 
     transform-origin: left bottom;
 }
 
